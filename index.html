@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="tag">ARTIFICIAL INTELLIGENCE PROJECT</p>
+            <h1>AI Sudoku Solver</h1>
+            <p>Constraint Satisfaction Problem (CSP)</p>
+            <p class="subtitle">
+                Constraint Propagation | Backtracking | MRV
+            </p>
+        </header>
+
+        <section class="panel">
+            <h2>Solve Your Sudoku</h2>
+            <p>Enter numbers from 1 to 9. Leave empty cells blank.</p>
+
+            <div id="sudoku-grid" class="sudoku-grid"></div>
+
+            <div class="buttons">
+                <button id="solve-btn">Solve Puzzle</button>
+                <button id="example-btn">Load Example</button>
+                <button id="clear-btn">Clear Grid</button>
+            </div>
+
+            <p id="status" aria-live="polite">
+                Enter a puzzle or load the example.
+            </p>
+        </section>
+
+        <section class="features">
+            <article>
+                <h3>Constraint Propagation</h3>
+                <p>Removes invalid candidate values using Sudoku rules.</p>
+            </article>
+            <article>
+                <h3>Backtracking Search</h3>
+                <p>Tries possible values and reverses invalid choices.</p>
+            </article>
+            <article>
+                <h3>MRV Heuristic</h3>
+                <p>Chooses the empty cell with the fewest candidates.</p>
+            </article>
+        </section>
+
+        <footer>
+            AI-Based Sudoku Solver Using CSP Techniques
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
